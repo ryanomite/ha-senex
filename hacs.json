@@ -1,0 +1,7 @@
+{
+  "name": "Tasks Integration",
+  "render_readme": true,
+  "domains": ["todo"],
+  "iot_class": "Cloud Push",
+  "homeassistant": "2023.8.0"
+}
