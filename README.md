@@ -38,8 +38,8 @@ This custom integration connects your Home Assistant instance to your Tasks appl
 2. Click the "+ ADD INTEGRATION" button
 3. Search for "Tasks Integration"
 4. Enter your configuration:
-   - **API URL**: The base URL of your Tasks API (e.g., `https://tasks-api.terraandryan.com`)
-   - **WebSocket URL**: The WebSocket URL (e.g., `wss://tasks-api.terraandryan.com`)
+   - **API URL**: The base URL of your Tasks API (e.g., `https://tasks-api.app.ryanroper.com`)
+   - **WebSocket URL**: The WebSocket URL (e.g., `wss://tasks-api.app.ryanroper.com`)
    - **API Token**: Your authentication token from the Tasks app (found in Settings > API Token)
 5. Select which projects you want to sync as To-Do lists
 6. Click "Submit"
