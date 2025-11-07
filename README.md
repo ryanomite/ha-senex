@@ -9,7 +9,6 @@ This custom integration connects your Home Assistant instance to your Tasks appl
 - **Bidirectional Sync**: Tasks created in Home Assistant appear in Tasks, and vice versa
 - **Real-time Updates**: Uses WebSocket connection for instant synchronization
 - **Project Selection**: Choose which projects to sync during setup
-- **User Tagging**: Tasks created in HA are automatically tagged with the creating user's first name
 - **Full CRUD Support**: Create, read, update, and delete tasks from Home Assistant
 
 ## Installation
