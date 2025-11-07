@@ -2,6 +2,8 @@
 
 This custom integration connects your Home Assistant instance to your Tasks application, syncing selected projects as To-Do list entities.
 
+**Repository:** `https://github.com/YOUR_USERNAME/tasks-ha-integration`
+
 ## Features
 
 - **Bidirectional Sync**: Tasks created in Home Assistant appear in Tasks, and vice versa
@@ -18,9 +20,12 @@ This custom integration connects your Home Assistant instance to your Tasks appl
 2. Click on "Integrations"
 3. Click the three dots in the top right corner
 4. Select "Custom repositories"
-5. Add this repository URL and select "Integration" as the category
-6. Click "Install"
-7. Restart Home Assistant
+5. Add this repository URL: `https://github.com/YOUR_USERNAME/tasks-ha-integration`
+6. Select "Integration" as the category
+7. Click "Add"
+8. Find "Tasks Integration" in the integration list
+9. Click "Install"
+10. Restart Home Assistant
 
 ### Manual Installation
 
