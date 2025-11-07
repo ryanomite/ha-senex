@@ -1,5 +1,5 @@
 {
-  "name": "Tasks Integration",
+  "name": "Senex",
   "render_readme": true,
   "domains": ["todo"],
   "iot_class": "Cloud Push",

@@ -2,12 +2,12 @@
   "config": {
     "step": {
       "user": {
-        "title": "Tasks Integration Setup",
-        "description": "Enter your Tasks API credentials",
+        "title": "Senex Integration Setup",
+        "description": "Enter your Senex API credentials",
         "data": {
-          "api_url": "API URL",
-          "ws_url": "WebSocket URL",
-          "token": "API Token"
+          "api_url": "Senex API URL",
+          "ws_url": "Senex WebSocket URL",
+          "token": "Authentication Token"
         }
       },
       "select_projects": {

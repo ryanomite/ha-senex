@@ -1,12 +1,12 @@
-# Tasks Integration for Home Assistant
+# Senex Integration for Home Assistant
 
-This custom integration connects your Home Assistant instance to your Tasks application, syncing selected projects as To-Do list entities.
+This custom integration connects your Home Assistant instance to your Senex task management application, syncing selected projects as To-Do list entities.
 
-**Repository:** `https://github.com/YOUR_USERNAME/tasks-ha-integration`
+**Repository:** `https://github.com/ryanomite/ha-senex`
 
 ## Features
 
-- **Bidirectional Sync**: Tasks created in Home Assistant appear in Tasks, and vice versa
+- **Bidirectional Sync**: Tasks created in Home Assistant appear in Senex, and vice versa
 - **Real-time Updates**: Uses WebSocket connection for instant synchronization
 - **Project Selection**: Choose which projects to sync during setup
 - **Full CRUD Support**: Create, read, update, and delete tasks from Home Assistant
@@ -19,10 +19,10 @@ This custom integration connects your Home Assistant instance to your Tasks appl
 2. Click on "Integrations"
 3. Click the three dots in the top right corner
 4. Select "Custom repositories"
-5. Add this repository URL: `https://github.com/YOUR_USERNAME/tasks-ha-integration`
+5. Add this repository URL: `https://github.com/ryanomite/ha-senex`
 6. Select "Integration" as the category
 7. Click "Add"
-8. Find "Tasks Integration" in the integration list
+8. Find "Senex" in the integration list
 9. Click "Install"
 10. Restart Home Assistant
 
@@ -35,11 +35,11 @@ This custom integration connects your Home Assistant instance to your Tasks appl
 
 1. Go to Configuration > Integrations
 2. Click the "+ ADD INTEGRATION" button
-3. Search for "Tasks Integration"
+3. Search for "Senex"
 4. Enter your configuration:
-   - **API URL**: The base URL of your Tasks API (e.g., `https://tasks-api.app.ryanroper.com`)
-   - **WebSocket URL**: The WebSocket URL (e.g., `wss://tasks-api.app.ryanroper.com`)
-   - **API Token**: Your authentication token from the Tasks app (found in Settings > API Token)
+   - **Senex API URL**: The base URL of your Senex API (e.g., `https://api.yourdomain.com`)
+   - **Senex WebSocket URL**: The WebSocket URL (e.g., `wss://api.yourdomain.com`)
+   - **Authentication Token**: Your API token from the Senex app (found in Settings)
 5. Select which projects you want to sync as To-Do lists
 6. Click "Submit"
 
@@ -52,8 +52,7 @@ Each selected project will appear as a To-Do list entity in Home Assistant with 
 Tasks created in Home Assistant will:
 - Be assigned to the selected project
 - Have source set to "api"
-- Be tagged with the Home Assistant user's first name
-- Sync immediately to the Tasks application
+- Sync immediately to the Senex application
 
 ### Completing Tasks
 
@@ -62,8 +61,8 @@ Tasks created in Home Assistant will:
 
 ### Deleting Tasks
 
-- Deleting a task in Home Assistant soft-deletes it in Tasks
-- Deleted tasks in Tasks are removed from Home Assistant
+- Deleting a task in Home Assistant soft-deletes it in Senex
+- Deleted tasks in Senex are removed from Home Assistant
 
 ### Task Properties
 
@@ -78,8 +77,8 @@ The integration syncs:
 ### Connection Issues
 
 - Verify your API URL and WebSocket URL are correct
-- Ensure your API token is valid (check in Tasks Settings)
-- Check that your Home Assistant instance can reach the Tasks API
+- Ensure your API token is valid (check in Senex Settings)
+- Check that your Home Assistant instance can reach the Senex API
 
 ### Tasks Not Syncing
 
