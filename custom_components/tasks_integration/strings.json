@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tasks Integration Setup",
+        "description": "Enter your Tasks API credentials",
+        "data": {
+          "api_url": "API URL",
+          "ws_url": "WebSocket URL",
+          "token": "API Token"
+        }
+      },
+      "select_projects": {
+        "title": "Select Projects to Sync",
+        "description": "Choose which projects should be synced as To-Do lists",
+        "data": {
+          "selected_projects": "Projects"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the API",
+      "invalid_auth": "Invalid authentication token",
+      "unknown": "Unexpected error occurred"
+    },
+    "abort": {
+      "already_configured": "This integration is already configured"
+    }
+  }
+}
