@@ -100,21 +100,8 @@ class TasksTodoListEntity(CoordinatorEntity, TodoListEntity):
 
     async def async_create_todo_item(self, item: TodoItem) -> None:
         """Create a To-Do item."""
-        # Extract HA user's first name from context
-        context = self.hass.context
-        user = None
-        user_name = None
-        
-        if context.user_id:
-            user = await self.hass.auth.async_get_user(context.user_id)
-            if user and user.name:
-                # Extract first name
-                user_name = user.name.split()[0] if user.name else None
-        
-        # Find or create tag for this user
-        tag_id = None
-        if user_name:
-            tag_id = await self._get_or_create_user_tag(user_name)
+        # Note: User tagging is currently disabled due to context access limitations
+        # in Home Assistant's todo platform. This feature may be re-enabled in future versions.
         
         # Create task via API
         async with aiohttp.ClientSession() as session:
@@ -125,7 +112,7 @@ class TasksTodoListEntity(CoordinatorEntity, TodoListEntity):
                 "dueDate": item.due.isoformat() if item.due else None,
                 "priority": 4,  # Default priority
                 "projectId": self.project_id,
-                "tagIds": [tag_id] if tag_id else [],
+                "tagIds": [],  # User tagging disabled for now
                 "source": "api",
             }
             
